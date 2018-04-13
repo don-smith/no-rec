@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "No Rec",
+  "version": "1.0",
+
+  "description": "Removes the Recommendations section from the YouTube homepage",
+
+  "icons": {
+    "48": "icons/no-rec-48.png",
+    "96": "icons/no-rec-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["no-rec.js"]
+    }
+  ]
+}
