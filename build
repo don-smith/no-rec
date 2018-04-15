@@ -1,1 +1,5 @@
-zip -r -FS no-res.zip src/*
+#!/usr/bin/env bash
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+cd $SCRIPTPATH/src
+zip -r -FS ../no-res.zip *
+cd $SCRIPTPATH
