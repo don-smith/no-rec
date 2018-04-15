@@ -4,25 +4,22 @@
   var h2s = document.getElementsByTagName('h2')
   hide(getParent(select(h2s, 'Recommended')))
 
-  function hide (elem) {
-    if (!elem) return showError()
-    elem.style.display = 'none'
+  function hide (section) {
+    if (!section) return showError()
+    section.style.display = 'none'
   }
 
   function getParent (h2) {
-    var res = null
-    if (!h2) showError()
-
+    if (!h2) return showError()
     try {
-      res = h2.parentNode.parentNode.parentNode.parentNode.parentElement
-      return res
+      return h2.parentNode.parentNode.parentNode.parentNode.parentElement
     } catch (error) {
       showError()
     }
   }
 
   function select (h2s, headerText) {
-    if (!h2s) return showError()
+    if (h2s.length < 1) return showError()
     for (var i = 0; i < h2s.length; i++) {
       for (var j = 0; j < h2s[i].childElementCount; j++) {
         const text = h2s[i].children[j].innerText
