@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 cd $SCRIPTPATH/src
-zip -r -FS ../no-res.zip *
+zip -r -FS ../no-rec.zip *
 cd $SCRIPTPATH
