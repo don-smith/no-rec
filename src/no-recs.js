@@ -35,6 +35,6 @@
 
   function showError () {
     // eslint-disable-next-line no-console
-    console.error('Error: No Rec browser add-on: YouTube has changed the structure of its homepage which is preventing this add-on from hiding the Recommended section. Ensure you are using the most recent version of the add-on. If you are, please add a new issue here: https://github.com/don-smith/no-rec/issues.')
+    console.error('Error: No Recs browser add-on: YouTube has changed the structure of its homepage which is preventing this add-on from hiding the Recommended section. Ensure you are using the most recent version of the add-on. If you are, please add a new issue here: https://github.com/don-smith/no-recs/issues.')
   }
 })()
